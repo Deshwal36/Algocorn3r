@@ -10,7 +10,7 @@ public class App {
 		String Phone = in.nextLine();
 		
 		Pattern p=Pattern.compile("(ABC)",Pattern.CASE_INSENSITIVE);
-		System.out.println(p);
+		System.out.println("pattern : " + p);
 		Matcher m=p.matcher(Phone);
 		int hit=0;
 		while(m.find()) {
@@ -20,7 +20,7 @@ public class App {
         hit++;
 	}
 		
-		System.out.println("Count : " + m.groupCount());
+		//System.out.println("Count : " + m.groupCount());
 		System.out.println("Count : " + hit);
 	in.close();
 	}
