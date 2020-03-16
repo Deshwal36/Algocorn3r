@@ -1,8 +1,8 @@
-package RegEx;
 import java.util.*;
 import java.util.Scanner;
 import java.util.regex.*;
-public class App {
+
+public class RegEx {
 
 	public static void main(String[] args) {
 		
