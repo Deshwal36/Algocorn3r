@@ -1,2 +1,2 @@
 # Algocorn3r
-Algorithms Concepts
+Algorithm Concepts
