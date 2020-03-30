@@ -36,10 +36,10 @@ public:
 int main(int argc , char * argv[]) {
     ios::sync_with_stdio(0);
     cin.tie(0);
-    //vector<int> rating=*argv;
+    vector<int> rating={1,2,3,4};
     Solution s;
 
-    cout<<s.numTeams(argv)<<"\n";
+    cout<<s.numTeams(rating)<<"\n";
 
   return 0;
 }
