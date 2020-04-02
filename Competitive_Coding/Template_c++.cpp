@@ -14,7 +14,8 @@ using namespace std;
       cin.tie(0);
       stack<int> s;
       s.push(1);
-
+      
+      
       cout<<s.top()<<"\n";
 
     return 0;

@@ -46,4 +46,4 @@ hs_err_pid*
 *.app
 
 .metadata
-
+.vscode
