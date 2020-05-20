@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> /* g++ compiler
+#include <bits/stdc++.h> /* g++ compiler
                          that allows us to
                          include the entire standard library.
                          Thus, it is not needed to separately
@@ -9,14 +9,49 @@ typedef long long ll;
 
 using namespace std;
 
-  int main() {
-      ios::sync_with_stdio(0);
-      cin.tie(0);
-      stack<int> s;
-      s.push(1);
-      
-      
-      cout<<s.top()<<"\n";
+// class Person{
+//   public:
+//   int id;
+//   string a;
 
-    return 0;
+//   Person(int id,string a){
+//   id=id;
+//   a=a;
+//   }
+
+// };
+
+void fun(int** edges, int v)
+{
+  for (int i = 0; i < v; i++)
+  {
+    cout <<"fun :" <<edges[0][i];
   }
+}
+int main()
+{
+  ios::sync_with_stdio(0);
+  cin.tie(0);
+
+  int v, e;
+  cin >> v >> e;
+
+  int** edges;
+  edges=new int*[v];
+  for (int i = 0; i < v; i++)
+  {
+    edges[i]=new int[v];
+    for (int j = 0; j < v; j++)
+      edges[i][j] = 0;
+  }
+  for (int i = 0; i < v; i++)
+  {
+    for (int j = 0; j < v; j++)
+      cout << edges[i][j];
+    cout << endl;
+  }
+
+  fun(edges, v);
+
+  return 0;
+}

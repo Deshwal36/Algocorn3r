@@ -35,7 +35,7 @@ int max(int a,int b){
 int getBalance(Node* N){
     if(N == NULL)
     return 0;
-    return (N->left->height)-(N->right->height);
+    return HeightBTree(N->left) - HeightBTree(N->right);
 }
 
 
@@ -76,17 +76,21 @@ Node* Insert(Node* root,int data){
     if(root == NULL)
     return newNode(data);
 
-    if(data < root->data)
+    if(data < root->data){
+        ///cout<<"data < \n";
         root->left=Insert(root->left,data);
-    else if(data > root->data)
+    }
+    else if(data > root->data){
+    //cout<<" data > \n";
         root->right=Insert(root->right,data);
+    }
     else    
-    return root; // equal keys are not allowed in BST
-
+    return root; // equal keys are not allowed in BST   
+    
     root->height=1+max(HeightBTree(root->left),HeightBTree(root->right));
-
+    //cout<<"height"<<root->height<<root->right->data;
     int Balance = getBalance(root);
-
+    //cout<<"Balance"<<Balance;
     if( Balance > 1 && data < root->left->data){ //LL CASE
             return rightRotate(root);
     }
@@ -126,17 +130,17 @@ int main(){
     /* Constructing tree given in  
     the above figure */
     root = Insert(root, 10);  
-    cout<<root->data<<"\n ";
+    //cout<<root->data<<"\n ";
     root = Insert(root, 20); 
-    cout<<root->data<<"\n "; 
+    //cout<<root->data<<"\n "; 
     root = Insert(root, 30);
-    cout<<root->data<<"\n ";  
+    //cout<<root->data<<"\n ";  
     root = Insert(root, 40);
-    cout<<root->data<<"\n ";  
+    //cout<<root->data<<"\n ";  
     root = Insert(root, 50);
-    cout<<root->data<<"\n ";  
+    //cout<<root->data<<"\n ";  
     root = Insert(root, 25);
-    cout<<root->data<<"\n ";  
+    //cout<<root->data<<"\n ";  
       
     /* The constructed AVL Tree would be  
                 30  
