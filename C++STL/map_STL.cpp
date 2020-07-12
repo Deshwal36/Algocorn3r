@@ -28,9 +28,9 @@ int main(){
     Map2["hi"].push_back(22);
     Map2["bye"].push_back(15);
     for(auto i:Map2){
-    cout<<i.first<<" "<<endl;
+    cout<<i.first<<":";
     for(auto j:i.second)
-    cout<<j;
+    cout<<j<<" ";
     cout<<endl;
     }
 
