@@ -65,6 +65,8 @@ struct Disjointsets{
     
     }
 
+   
+
 };
 
 
@@ -93,9 +95,14 @@ int Graph::KruskalMST(){
         }
         
     }
+    
+     delete[] ds.parent;
+     delete[] ds.rank;
     return mst_wt;
 
 }
+
+
 
 int main(){
 
