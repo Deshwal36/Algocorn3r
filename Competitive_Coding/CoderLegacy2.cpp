@@ -24,22 +24,16 @@ int main(){
         for(int i=0;i<n;i++){
             cin>>a[i];
         }
-        cout<<"a[]";
-        for(int i=0;i<n;i++){
-            
-            cout<<a[i];
-        }
-        cout<<"\n";
+        
         int q;
         cin>>q;
         while(q--){
             int x,y,cross=0;
             cin>>x>>y;
-            cout<<"x:"<<x<<"y:"<<y<<"\n";
-            cout<<"cross:"<<cross<<"\n";
+            
             for(int i=0;i<n;i++){
                 int sign=((x+y)-a[i]);
-                cout<<"sign:"<<sign<<"\n";
+                
                 if(sign==0){
                     cross=-1;
                     break;
@@ -48,8 +42,8 @@ int main(){
                     cross+=1;
                 
             }
-            cout<<"cross:"<<cross<<"\n";
-            cout<<"-------------\n";
+            cout<<cross<<"\n";
+           
         }
 
     }
