@@ -1,2 +1,4 @@
 # Algocorn3r
-Algorithm Concepts
+
+This repo is dedicated to Algorithm & DS Concepts Hands-On.
+
