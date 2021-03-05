@@ -46,6 +46,7 @@ hs_err_pid*
 *.app
 *.tex
 
+ShivamDeshwal_CV.tex
 .metadata
 .vscode
 .classpath
