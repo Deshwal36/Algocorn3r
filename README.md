@@ -3,7 +3,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Deshwal36/Algocorn3r?color=green&label=Most%20Used%20C%2B%2B)  
 ![GitHub last commit](https://img.shields.io/github/last-commit/Deshwal36/Algocorn3r)  
 
-This repository is dedicated to
+This Repository is dedicated to
 ### Algorithms & Data-Structures
 
 
