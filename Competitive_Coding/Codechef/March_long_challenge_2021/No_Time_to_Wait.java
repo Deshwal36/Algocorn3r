@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * No_Time_to_Wait
+ * Problem : No_Time_to_Wait 
  */
 public class No_Time_to_Wait {
 
