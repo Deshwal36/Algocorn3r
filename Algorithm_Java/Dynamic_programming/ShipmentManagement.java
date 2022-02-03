@@ -55,12 +55,9 @@ public class ShipmentManagement {
 //            k++;
 //        }
 
-        Iterator<ShippingEntry> it = res.getLs().iterator();
+        for (ShippingEntry s : res.getLs()) {
 
-        while (it.hasNext()) {
-
-            ShippingEntry s=it.next();
-            System.out.println(s.item.toString()+" : "+s.count);
+            System.out.println(s.item.toString() + " : " + s.count);
         }
 
 
@@ -100,7 +97,7 @@ public class ShipmentManagement {
 
 
         int i=0;
-        while(i<s1.ls.size()){
+        while(i<s1.getLs().size()){
 
             int count=s1.getLs().get(i).count;
             //System.out.println("count before: "+count);
